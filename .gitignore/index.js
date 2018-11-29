@@ -39,7 +39,7 @@ bot.on('ready', () => {
  * - *  -> Tous les mois
  * - *  -> Tous les jours de la semaine (Mais on s'en fout puisque tu dis que c'est le premier jour du mois)
 */
-schedule.scheduleJob('1 30 8 29 11 4', function(){
+schedule.scheduleJob('1 31 8 29 11 4', function(){
 
 
   bot.channels.get("480747263090753537").send(
@@ -47,7 +47,7 @@ schedule.scheduleJob('1 30 8 29 11 4', function(){
     embed: {
       color: 3447003,
       title: 'BOOST',
-      description: 'Zeubi, dépêche-toi, il y a le boost dans 5 min'
+      description: 'Zeubi, dépêche-toi, test'
       
     }
   })
