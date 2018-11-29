@@ -5,9 +5,6 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
 var http = require("http");
-setInterval(function() {
-    http.get("http://<zeubiboost>.herokuapp.com");
-
 
 /**
  * Quand le bot est prêt
@@ -590,6 +587,5 @@ schedule.scheduleJob('1 55 2 7 12 5', function(){
     }
   })
 })
-    }, 300000); // every 5 minutes (300000)
 
 bot.login(process.env.TOKEN)
