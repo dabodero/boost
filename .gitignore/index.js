@@ -34,7 +34,7 @@ bot.on('ready', () => {
  * - *  -> Tous les mois
  * - *  -> Tous les jours de la semaine (Mais on s'en fout puisque tu dis que c'est le premier jour du mois)
 */
-schedule.scheduleJob('1 40 8 29 11 4', function(){
+schedule.scheduleJob('1 42 8 29 11 4', function(){
 
 
   bot.channels.get("480747263090753537").send(
