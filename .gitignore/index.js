@@ -7,7 +7,6 @@ const schedule = require('node-schedule')
 var http = require("http");
 setInterval(function() {
     http.get("zeubiboost.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
 /**
  * Quand le bot est prêt
  */
@@ -495,5 +494,6 @@ schedule.scheduleJob('1 55 1 7 12 5', function(){
     }
   })
 })
+}, 300000); // every 5 minutes (300000)
 
 bot.login(process.env.TOKEN)
