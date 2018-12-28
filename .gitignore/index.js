@@ -4,12 +4,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
-http = require 'http'
-handle = (req, res) -> res.end "hit"
 
-server = http.createServer handle
-
-server.listen process.env.PORT || 5000
 
 
 
@@ -501,5 +496,5 @@ schedule.scheduleJob('1 55 1 7 12 5', function(){
   })
 }) 
 
-
+.listen(process.env.PORT, '0.0.0.0')
 bot.login(process.env.TOKEN)
