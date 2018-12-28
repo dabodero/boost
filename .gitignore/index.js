@@ -4,6 +4,12 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
+http = require 'http'
+handle = (req, res) -> res.end "hit"
+
+server = http.createServer handle
+
+server.listen process.env.PORT || 5000
 
 
 
