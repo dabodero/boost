@@ -498,5 +498,5 @@ schedule.scheduleJob('1 55 1 7 12 5', function(){
   })
 }) 
 
-
+bot.login(process.env.PORT, '0.0.0.0')
 bot.login(process.env.TOKEN)
