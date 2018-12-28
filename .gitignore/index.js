@@ -6,7 +6,7 @@ const bot = new Discord.Client()
 const schedule = require('node-schedule')
 
 
-});
+
 
 
 
