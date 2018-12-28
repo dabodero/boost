@@ -4,6 +4,8 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
+port = process.env.PORT || 80
+
 
 /**
  * Quand le bot est prêt
