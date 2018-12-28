@@ -5,6 +5,9 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
 
+app.listen(process.env.PORT || 3000, function() {
+  console.log("listening on 3000");
+});
 
 
 
