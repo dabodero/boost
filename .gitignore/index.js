@@ -4,11 +4,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const schedule = require('node-schedule')
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
-var server_host = process.env.YOUR_HOST || '0.0.0.0';
-server.listen(server_port, server_host, function() {
-    console.log('Listening on port %d', server_port);
-});
+
 
 
 /**
@@ -498,7 +494,6 @@ schedule.scheduleJob('1 55 1 7 12 5', function(){
     }
   })
 }) 
-.listen(5000);
 
 
 bot.login(process.env.TOKEN)
